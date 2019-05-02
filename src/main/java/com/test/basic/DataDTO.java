@@ -4,68 +4,104 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class DataDTO {
-    private String instruction;
-    private String entity;
-    private Date instructionDate;
-    private Date settlementDate;
-    private Flag flag;
-    private BigDecimal agreedFx;
-    private int units;
+	private String entity;
+	private Date instructionDate;
+	private Date settlementDate;
+	private Date newSettlementDate;
+	private Flag flag;
+	private BigDecimal agreedFx;
+	private int units;
+	private Currency currency;
+	private BigDecimal pricePerUnit;
+	private BigDecimal usdAmout;
+	private String rank;
 
-    public String getInstruction() {
-        return instruction;
-    }
+	public String getEntity() {
+		return entity;
+	}
 
-    public void setInstruction(String instruction) {
-        this.instruction = instruction;
-    }
+	public void setEntity(String entity) {
+		this.entity = entity;
+	}
 
-    public String getEntity() {
-        return entity;
-    }
+	public Date getInstructionDate() {
+		return instructionDate;
+	}
 
-    public void setEntity(String entity) {
-        this.entity = entity;
-    }
+	public void setInstructionDate(Date instructionDate) {
+		this.instructionDate = instructionDate;
+	}
 
-    public Date getInstructionDate() {
-        return instructionDate;
-    }
+	public Date getSettlementDate() {
+		return settlementDate;
+	}
 
-    public void setInstructionDate(Date instructionDate) {
-        this.instructionDate = instructionDate;
-    }
+	public void setSettlementDate(Date settlementDate) {
+		this.settlementDate = settlementDate;
+	}
 
-    public Date getSettlementDate() {
-        return settlementDate;
-    }
+	public Flag getFlag() {
+		return flag;
+	}
 
-    public void setSettlementDate(Date settlementDate) {
-        this.settlementDate = settlementDate;
-    }
+	public void setFlag(Flag flag) {
+		this.flag = flag;
+	}
 
-    public Flag getFlag() {
-        return flag;
-    }
+	public BigDecimal getAgreedFx() {
+		return agreedFx;
+	}
 
-    public void setFlag(Flag flag) {
-        this.flag = flag;
-    }
+	public void setAgreedFx(BigDecimal agreedFx) {
+		this.agreedFx = agreedFx;
+	}
 
-    public BigDecimal getAgreedFx() {
-        return agreedFx;
-    }
+	public int getUnits() {
+		return units;
+	}
 
-    public void setAgreedFx(BigDecimal agreedFx) {
-        this.agreedFx = agreedFx;
-    }
+	public void setUnits(int units) {
+		this.units = units;
+	}
 
-    public int getUnits() {
-        return units;
-    }
+	public Currency getCurrency() {
+		return currency;
+	}
 
-    public void setUnits(int units) {
-        this.units = units;
-    }
+	public void setCurrency(Currency currency) {
+		this.currency = currency;
+	}
+
+	public BigDecimal getPricePerUnit() {
+		return pricePerUnit;
+	}
+
+	public void setPricePerUnit(BigDecimal pricePerUnit) {
+		this.pricePerUnit = pricePerUnit;
+	}
+
+	public BigDecimal getUsdAmout() {
+		return usdAmout;
+	}
+
+	public void setUsdAmout(BigDecimal usdAmout) {
+		this.usdAmout = usdAmout;
+	}
+
+	public String getRank() {
+		return rank;
+	}
+
+	public void setRank(String rank) {
+		this.rank = rank;
+	}
+
+	public Date getNewSettlementDate() {
+		return newSettlementDate;
+	}
+
+	public void setNewSettlementDate(Date newSettlementDate) {
+		this.newSettlementDate = newSettlementDate;
+	}
 
 }
